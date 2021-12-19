@@ -1,3 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  color: #48556a;
+  line-height: 1.5rem;
+}
+
+h1, h2 {
+  font-weight: 600;
+}
+
+body {
+  background: #ecf2f8;
+}
+
+main {
+  width: 100%;
+  margin: 100px auto 0;
+}
+@media screen and (min-width: 1024px) {
+  main {
+    width: 80%;
+    max-width: 1224px;
+    display: grid;
+    grid-gap: 3rem;
+    grid: "daniel daniel jonathan kira" "jeanette patrick patrick kira";
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  padding: 3rem;
+  border-radius: 0.7rem;
+  background: white;
+}
+.card-daniel {
+  grid-area: daniel;
+  background: #7541c8 url("./images/bg-pattern-quotation.svg") no-repeat top right;
+  color: white;
+}
+.card-jonathan {
+  grid-area: jonathan;
+  background-color: #48556a;
+  color: white;
+}
+.card-jeanette {
+  grid-area: jeanette;
+}
+.card-patrick {
+  grid-area: patrick;
+  background-color: #19212e;
+  color: white;
+}
+.card-kira {
+  grid-area: kira;
+}
+
+.card-identity {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 1.5rem;
+}
+.card-identity-img {
+  width: 3rem;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+.card-identity-name {
+  font-size: 1rem;
+}
+.card-identity-qualification {
+  font-size: 0.85rem;
+  opacity: 50%;
+}
+
+.card-main-statement {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-paragraph {
+  opacity: 70%;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
