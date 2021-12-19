@@ -64,8 +64,12 @@ main {
 
     &-daniel {
         grid-area: daniel;
-        background: $color-card-1 url("./images/bg-pattern-quotation.svg") no-repeat top right;
+        background: $color-card-1 url("./images/bg-pattern-quotation.svg") no-repeat 90% top;
         color: $color-font-alt;
+
+        @media screen and (min-width: $breakpoint-lg) {
+            background-position: 80% top;
+        }
     }
 
     &-jonathan {
@@ -127,7 +131,7 @@ main {
     margin: 5rem auto 1rem;
 
     a {
-        color: hsl(228, 45%, 44%);
+        color: $color-card-1;
         text-decoration: none;
 
         &:hover {

@@ -44,8 +44,13 @@ main {
 }
 .card-daniel {
   grid-area: daniel;
-  background: #7541c8 url("./images/bg-pattern-quotation.svg") no-repeat top right;
+  background: #7541c8 url("./images/bg-pattern-quotation.svg") no-repeat 90% top;
   color: white;
+}
+@media screen and (min-width: 1024px) {
+  .card-daniel {
+    background-position: 80% top;
+  }
 }
 .card-jonathan {
   grid-area: jonathan;
@@ -99,7 +104,7 @@ main {
   margin: 5rem auto 1rem;
 }
 .attribution a {
-  color: #3e52a3;
+  color: #7541c8;
   text-decoration: none;
 }
 .attribution a:hover {
