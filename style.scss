@@ -1,3 +1,4 @@
+$breakpoint-sm: 400px;
 $breakpoint-lg: 1024px;
 
 $color-background: hsl(210, 46%, 95%);
@@ -9,8 +10,8 @@ $color-card-3: hsl(219, 29%, 14%);
 $color-font-main: hsl(217, 19%, 35%);
 $color-font-alt: hsl(0, 0%, 100%);
 
-$spacing-grid: 3rem;
-$spacing-card: 1.5rem;
+$spacing-grid: 2rem;
+$spacing-card: 2rem;
 
 * {
     margin: 0;
@@ -35,14 +36,20 @@ body {
 }
 
 main {
-    width: 100%;
+    width: 80%;
+    height: auto;
+    max-width: $breakpoint-sm;
     margin: 100px auto 0;
+    display: grid;
+    grid-gap: $spacing-grid;
+    grid:
+        "daniel" "jonathan" "jeanette" "patrick" "kira";
 
     @media screen and (min-width: $breakpoint-lg) {
-        width: 80%;
+        
         max-width: $breakpoint-lg + 200px;
-        display: grid;
-        grid-gap: $spacing-grid;
+        
+        
         grid:
             "daniel daniel jonathan kira"
             "jeanette patrick patrick kira";
@@ -99,7 +106,7 @@ main {
     }
 
     &-qualification {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
         opacity: 50%;
     }
 }
@@ -115,9 +122,16 @@ main {
 }
 
 .attribution {
-    font-size: 11px; text-align: center;
+    font-size: 11px;
+    text-align: center;
+    margin: 5rem auto 1rem;
 
-    .attribution a {
+    a {
         color: hsl(228, 45%, 44%);
+        text-decoration: none;
+
+        &:hover {
+            color: $color-card-main;
+        }
     }
 }
