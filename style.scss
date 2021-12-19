@@ -46,10 +46,7 @@ main {
         "daniel" "jonathan" "jeanette" "patrick" "kira";
 
     @media screen and (min-width: $breakpoint-lg) {
-        
         max-width: $breakpoint-lg + 200px;
-        
-        
         grid:
             "daniel daniel jonathan kira"
             "jeanette patrick patrick kira";
