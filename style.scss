@@ -13,6 +13,10 @@ $color-font-alt: hsl(0, 0%, 100%);
 $spacing-grid: 2rem;
 $spacing-card: 2rem;
 
+@mixin card-shadow {
+    box-shadow: 1.5rem 1.5rem 2rem hsl(0, 0%, 0%, 7%);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -77,6 +81,7 @@ main {
 
     &-jeanette {
         grid-area: jeanette;
+        @include card-shadow();
     }
 
     &-patrick {
@@ -87,6 +92,7 @@ main {
 
     &-kira {
         grid-area: kira;
+        @include card-shadow();
     }
 }
 
